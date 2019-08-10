@@ -1,0 +1,2198 @@
+[
+    {
+        "outputFile": "E:\\themepackage\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endColumn": 46,
+                        "endOffset": 1124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 53,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 53,
+                        "endOffset": 980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 68,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endColumn": 53,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 49,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 56,
+                    "endOffset": 429
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 434,
+                    "endColumn": 51,
+                    "endOffset": 481
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 486,
+                    "endColumn": 50,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 51,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 57,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 51,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 61,
+                    "endOffset": 858
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 61,
+                        "endOffset": 1206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 863,
+                    "endColumn": 58,
+                    "endOffset": 917
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 922,
+                    "endColumn": 57,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 61,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 55,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "E:\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\hhtestxx\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endColumn": 46,
+                        "endOffset": 1124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 53,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 53,
+                        "endOffset": 980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 68,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endColumn": 53,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 49,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 56,
+                    "endOffset": 429
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 434,
+                    "endColumn": 51,
+                    "endOffset": 481
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 486,
+                    "endColumn": 50,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 51,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 57,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 51,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 61,
+                    "endOffset": 858
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 61,
+                        "endOffset": 1206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 863,
+                    "endColumn": 58,
+                    "endOffset": 917
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 922,
+                    "endColumn": 57,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 61,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 55,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endColumn": 46,
+                        "endOffset": 1124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 53,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 53,
+                        "endOffset": 980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 68,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endColumn": 53,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 49,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 56,
+                    "endOffset": 429
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 434,
+                    "endColumn": 51,
+                    "endOffset": 481
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 486,
+                    "endColumn": 50,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 51,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 57,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 51,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 61,
+                    "endOffset": 858
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 61,
+                        "endOffset": 1206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 863,
+                    "endColumn": 58,
+                    "endOffset": 917
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 922,
+                    "endColumn": 57,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 61,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 55,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "E:\\hht estxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1084,
+                        "endColumn": 46,
+                        "endOffset": 1126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 55,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 55,
+                        "endOffset": 982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 206,
+                    "endColumn": 68,
+                    "endOffset": 270
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1014,
+                        "endColumn": 68,
+                        "endOffset": 1078
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 275,
+                    "endColumn": 53,
+                    "endOffset": 324
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 329,
+                    "endColumn": 49,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 379,
+                    "endColumn": 56,
+                    "endOffset": 431
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 436,
+                    "endColumn": 51,
+                    "endOffset": 483
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 488,
+                    "endColumn": 50,
+                    "endOffset": 534
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 539,
+                    "endColumn": 50,
+                    "endOffset": 585
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 590,
+                    "endColumn": 51,
+                    "endOffset": 637
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 642,
+                    "endColumn": 50,
+                    "endOffset": 688
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 693,
+                    "endColumn": 57,
+                    "endOffset": 746
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 751,
+                    "endColumn": 51,
+                    "endOffset": 798
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 803,
+                    "endColumn": 61,
+                    "endOffset": 860
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1151,
+                        "endColumn": 61,
+                        "endOffset": 1208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 865,
+                    "endColumn": 58,
+                    "endOffset": 919
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 924,
+                    "endColumn": 57,
+                    "endOffset": 977
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 982,
+                    "endColumn": 61,
+                    "endOffset": 1039
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1044,
+                    "endColumn": 55,
+                    "endOffset": 1095
+                },
+                "from": {
+                    "file": "E:\\skintool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endColumn": 46,
+                        "endOffset": 1124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 53,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 53,
+                        "endOffset": 980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 68,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endColumn": 53,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 49,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 56,
+                    "endOffset": 429
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 434,
+                    "endColumn": 51,
+                    "endOffset": 481
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 486,
+                    "endColumn": 50,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 51,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 57,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 51,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 61,
+                    "endOffset": 858
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 61,
+                        "endOffset": 1206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 863,
+                    "endColumn": 58,
+                    "endOffset": 917
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 922,
+                    "endColumn": 57,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 61,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 55,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "E:\\skin tool\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1082,
+                        "endColumn": 46,
+                        "endOffset": 1124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 47,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 47,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 53,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 53,
+                        "endOffset": 980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 68,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endColumn": 53,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 53,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 49,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 49,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 56,
+                    "endOffset": 429
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 56,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 434,
+                    "endColumn": 51,
+                    "endOffset": 481
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 51,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 486,
+                    "endColumn": 50,
+                    "endOffset": 532
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 50,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 537,
+                    "endColumn": 50,
+                    "endOffset": 583
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 50,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 588,
+                    "endColumn": 51,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 51,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 378,
+                        "endColumn": 50,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 57,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 57,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 51,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 140,
+                        "endColumn": 51,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 61,
+                    "endOffset": 858
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 61,
+                        "endOffset": 1206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 863,
+                    "endColumn": 58,
+                    "endOffset": 917
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 71,
+                        "endColumn": 58,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 922,
+                    "endColumn": 57,
+                    "endOffset": 975
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 251,
+                        "endColumn": 57,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 980,
+                    "endColumn": 61,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 61,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 55,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "E:\\hhtestxx\\themepackage\\ThemeSkinD9\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 55,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    }
+]

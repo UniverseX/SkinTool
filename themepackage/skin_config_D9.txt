@@ -1,0 +1,48 @@
+#配置文件
+
+#注意：所有=号后面的值不能换行
+#注意：打包前请检查名称
+
+#1.主题路径 主题根目录（skin打包工具会自动拷贝里面的png图片）
+themepath=E:\launcher_D9\UI\8.6\D9-主题包-多彩音乐
+
+#拷贝png图片排除项，一般为预览图
+ignore_copy1=icon_preview.png
+ignore_copy2=lockscreen_preview.png
+ignore_copy3=widget_preview.png
+
+#2.打包后名称
+skinname=多彩音乐.skin
+
+#3.颜色
+#大小写无所谓(但是同一个值要么全大写，要么全小写)，必须带#号 6位或8位 例：#ffffff #7fffffff 7f代表50%透明度
+#透明度转换  例：#FFFFFF %30透明度 --> 用windows计算器（win+R 输入calc 回车） --> 查看 --> 程序员模式
+#在10进制模式下输入透明度百分比30，然后点击16进制模式，显示的值为1E，然后紧接着点击 * FF / 64的结果为-->4C
+#将结果4C放到颜色值前面就是 最后的结果--> #4CFFFFFF
+
+#开始配置颜色
+home_ic_color=#FFFFFF
+player_song_color=#FFFFFF
+
+#注意：main_text_normal就是player_sphere_color_n
+main_text_normal=#FFFFFF
+
+#注意：main_text_pressed就是player_sphere_color_c
+main_text_pressed=#ffc000
+
+player_sphere_album_color_c=#ffc000
+player_lrc_color=#FFFFFF
+player_lrcplaying_color=#ffc000
+list_title_color=#FFFFFF
+list_song_color=#FFFFFF
+list_singer_color=#99FFFFFF
+list_time_color=#99FFFFFF
+list_songplaying_color=#ffc000
+home_listline_color=#26FFFFFF
+app_ic_color=#FFFFFF
+
+#4.尺寸
+third_pard_app_icon_size=72
+third_pard_app_icon_margin_top=92
+#圆角
+third_pard_app_icon_corner=10

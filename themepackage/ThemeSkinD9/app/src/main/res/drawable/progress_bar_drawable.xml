@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/home_player_list_play01"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play02"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play03"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play04"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play05"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/home_player_list_play04"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play03"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play02"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/home_player_list_play01"
+        android:duration="150" />
+</animation-list>

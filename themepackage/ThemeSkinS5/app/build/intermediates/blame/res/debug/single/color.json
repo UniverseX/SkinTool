@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\build\\intermediates\\res\\merged\\debug\\color\\color_widget_text_state.xml",
+        "source": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\src\\main\\res\\color\\color_widget_text_state.xml"
+    },
+    {
+        "merged": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\build\\intermediates\\res\\merged\\debug\\color\\color_sound_effect_selected_state.xml",
+        "source": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\src\\main\\res\\color\\color_sound_effect_selected_state.xml"
+    },
+    {
+        "merged": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\build\\intermediates\\res\\merged\\debug\\color\\color_sound_effect_unselected_state.xml",
+        "source": "E:\\hht estxx\\themepackage\\ThemeSkinS5\\app\\src\\main\\res\\color\\color_sound_effect_unselected_state.xml"
+    }
+]

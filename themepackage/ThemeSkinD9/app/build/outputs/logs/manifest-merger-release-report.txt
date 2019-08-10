@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml:1:1-2:37
+	package
+		ADDED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+	android:targetSdkVersion
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
+		INJECTED from E:\skintool\themepackage\ThemeSkinD9\app\src\main\AndroidManifest.xml
