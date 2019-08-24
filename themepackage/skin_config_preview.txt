@@ -1,0 +1,17 @@
+#******如果要改预览图名称，记得连default_theme_files_D9(S5).txt中的也改了
+
+
+#S5预览图配置
+S5_preview1=icon_preview.png
+S5_preview2=lockscreen_preview.png
+S5_preview3=widget_preview.png
+
+#D9预览图配置
+D9_preview1=icon_preview.png
+D9_preview2=lockscreen_preview.png
+D9_preview3=widget_preview.png
+
+#XUI预览图配置(预备)
+XUI_preview1=icon_preview.png
+XUI_preview2=lockscreen_preview.png
+XUI_preview3=widget_preview.png

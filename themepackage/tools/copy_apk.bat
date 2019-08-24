@@ -2,13 +2,18 @@
 set platform=%1%
 @echo off
 
+set DIRNAME=%~dp0
 set ROOT=%DIRNAME%..
 set CONFIG_FILE=%ROOT%\skin_config_%platform%.txt
+set ini_config_file=%DIRNAME%skin_config_%platform%.ini
 
-copy "%CONFIG_FILE%" "skin_config_D9.ini"
+if not exist "%ini_config_file%" ( copy "%CONFIG_FILE%" "%ini_config_file%" ) else ( echo ini_config_prepare_success )
+echo ---------------
+
+echo DIRNAME=%DIRNAME%
 
 @rem read files config
-for /f "tokens=1,2 delims==" %%x in (skin_config_D9.ini) do (
+for /f "tokens=1,2 delims==" %%x in (tools\skin_config_%platform%.ini) do (
  set map[%%x]=%%y
 )
 set SKIN=%map[skinname]%
