@@ -1,0 +1,10 @@
+1.点击  “点我.bat”
+
+2.在输入框中输入主题路径
+
+3.点击对应主题的  检查 按钮
+
+注意：
+default_theme_files_D9(S5)文件中的内容可以配置, 需要检查的就把名称复制进去，不需要检查的删掉就好
+
+两个default_theme_files...文件和ignore_check.txt名称不能更改

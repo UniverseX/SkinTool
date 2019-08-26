@@ -1,0 +1,9 @@
+1.mac版的名称工具需要将Checker(.app)复制到主题根目录下
+
+2.双击Checker(.app)
+
+3.点击对应检查按钮（S5,D9）
+
+4.配置文件路径：右键Checker(.app)-->显示包内容-->Contents-->Resources
+
+注意：检查完成并OK后记得删除掉Checker(.app)，以免发主题的时候带着它
