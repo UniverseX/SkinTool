@@ -4,7 +4,7 @@
 #注意：打包前请检查名称
 
 #1.主题路径 主题根目录（skin打包工具会自动拷贝里面的png图片）
-themepath=E:\launcher_3561\UI\8.6\A5-主题包-火之意志-V1.0-0731
+themepath=E:\launcher_3561\UI\8.26\A5-主题包-蝙蝠侠V1.1-805
 
 #拷贝png图片排除项，一般为预览图
 ignore_copy1=icon_preview.png
@@ -12,7 +12,7 @@ ignore_copy2=lockscreen_preview.png
 ignore_copy3=widget_preview.png
 
 #2.打包后名称
-skinname=火之意志.skin
+skinname=蝙蝠侠.skin
 
 #3.颜色
 #大小写无所谓(但是同一个值要么全大写，要么全小写)，必须带#号 6位或8位 例：#ffffff #7fffffff 7f代表50%透明度

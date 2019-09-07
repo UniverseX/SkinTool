@@ -1,3 +1,5 @@
 *.ini
 */build/*
 build/
+*.png
+*.skin

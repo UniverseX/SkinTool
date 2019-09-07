@@ -2,16 +2,16 @@
     <color name="home_ic_color">#FFFFFF</color><!--home_ic_color-->
     <color name="player_song_color">#FFFFFF</color><!--player_song_color-->
     <color name="main_text_normal">#FFFFFF</color><!--player_sphere_color_n-->
-    <color name="main_text_pressed">#ffc000</color><!--player_sphere_color_c-->
+    <color name="main_text_pressed">#FDE902</color><!--player_sphere_color_c-->
     <color name="player_lrc_color">#FFFFFF</color><!--player_lrc_color-->
-    <color name="player_lrcplaying_color">#ffc000</color><!--player_lrcplaying_color-->
+    <color name="player_lrcplaying_color">#FDE902</color><!--player_lrcplaying_color-->
     <color name="list_title_color">#FFFFFF</color><!--list_title_color-->
-    <color name="list_song_color">#FFFFFF</color><!--list_song_color-->
-    <color name="list_singer_color">#99FFFFFF</color><!--list_singer_color-->
-    <color name="list_time_color">#99FFFFFF</color><!--list_time_color-->
-    <color name="list_songplaying_color">#ffc000</color><!--list_songplaying_color-->
-    <color name="home_listline_color">#26FFFFFF</color><!--home_listline_color-->
+    <color name="list_song_color">#7FFFFFFF</color><!--list_song_color-->
+    <color name="list_singer_color">#7FFFFFFF</color><!--list_singer_color-->
+    <color name="list_time_color">#7FFFFFFF</color><!--list_time_color-->
+    <color name="list_songplaying_color">#FDE902</color><!--list_songplaying_color-->
+    <color name="home_listline_color">#D8FFFFFF</color><!--home_listline_color-->
     <color name="home_loading_color">@color/main_text_normal</color>
     <color name="app_ic_color">#FFFFFF</color><!--app_ic_color-->
-    <color name="player_sphere_album_color_c">#ffc000</color>
+    <color name="player_sphere_album_color_c">#FDE902</color>
 </resources>

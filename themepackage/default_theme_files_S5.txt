@@ -1,4 +1,4 @@
-#预览图
+﻿#预览图
 icon_preview.png
 lockscreen_preview.png
 widget_preview.png
@@ -21,7 +21,6 @@ app_ic_themestore.png
 app_ic_vehiclestate.png
 app_ic_video_local.png
 app_ic_weather.png
-icon.png
 loading.png
 page_c.png
 page_n.png
@@ -41,7 +40,6 @@ thumbnail_widget_onlinemusic.png
 thumbnail_widget_personalcenter.png
 thumbnail_widget_weather.png
 wallpaper.png
-widget.png
 widget_btphone_bg.png
 widget_btphone_btn_c.png
 widget_btphone_btn_n.png
