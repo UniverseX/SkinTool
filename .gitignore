@@ -3,3 +3,6 @@
 build/
 *.png
 *.skin
+*/bin/*
+*/out/*
+*.class

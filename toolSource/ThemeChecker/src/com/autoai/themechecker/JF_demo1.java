@@ -23,6 +23,7 @@ public class JF_demo1 extends JApplet {
     private JEditorPane dstPathEditPanel;
     private OnClickListener onClickListener_S5;
     private OnClickListener onClickListener_D9;
+    private OnClickListener onClickListener_XUI;
     private String dstPath;
     private GridBagLayout gb_child2;
     private GridBagLayout gb_child3;
@@ -88,7 +89,7 @@ public class JF_demo1 extends JApplet {
             }
         });
         makeTitleLabel(panel2, "", gb_child2, cc2);
-        cc2.gridwidth = GridBagConstraints.REMAINDER;
+
         makeButtonLabel(panel2, "检查D9", gb_child2, cc2, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -99,6 +100,22 @@ public class JF_demo1 extends JApplet {
                 }else {
                     if (onClickListener_D9 != null) {
                         onClickListener_D9.onClick(dstPath);
+                    }
+                }
+            }
+        });
+
+        cc2.gridwidth = GridBagConstraints.REMAINDER;
+        makeButtonLabel(panel2, "检查XUI", gb_child2, cc2, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                dstPath = dstPathEditPanel.getText();
+                File file = new File(dstPath);
+                if(!file.exists()) {
+                    JOptionPane.showMessageDialog(panel1, "路径不存在");
+                }else {
+                    if (onClickListener_XUI != null) {
+                        onClickListener_XUI.onClick(dstPath);
                     }
                 }
             }
@@ -205,7 +222,7 @@ public class JF_demo1 extends JApplet {
         return jPanel;
     }
 
-    public interface OnClickListener{
+	public interface OnClickListener{
         void onClick(String dstPath);
     }
 
@@ -215,5 +232,9 @@ public class JF_demo1 extends JApplet {
 
     public void setOnClickListenerD9(OnClickListener onClickListener) {
         this.onClickListener_D9 = onClickListener;
+    }
+
+    public void setOnClickListenerXUI(OnClickListener onClickListener) {
+        this.onClickListener_XUI = onClickListener;
     }
 }

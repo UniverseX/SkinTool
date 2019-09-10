@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <color name="text_time_color">#FEDF8A</color>
+    <color name="text_date_color">#FEDF8A</color>
+	<color name="text_weather_color">#FEDF8A</color>
+	<color name="text_icon">#0F1945</color>
+</resources>

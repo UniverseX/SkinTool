@@ -1,3 +1,0 @@
-﻿#该文件不需要检查
-
-home_player_load.png

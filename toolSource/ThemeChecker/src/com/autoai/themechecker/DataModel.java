@@ -26,7 +26,7 @@ public class DataModel {
 
     public void prepareStandData(){
         //1.准备数据（标准主题png图片）名称
-        List<String> ignores = getFileContentList(ignorePath);
+        List<String> ignores = /*getFileContentList(ignorePath)*/new ArrayList<>();
         List<String> standardFiles = getFileContentList(standardPath);
         if(standardFiles == null){
             return;

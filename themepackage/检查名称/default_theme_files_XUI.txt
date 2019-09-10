@@ -1,0 +1,12 @@
+﻿#预览图
+preview_wallpaper01.png
+preview_wallpaper02.png
+preview_wallpaper03.png
+
+#其他图片
+wallpaper_app_01.png
+wallpaper_app_02.png
+wallpaper_app_03.png
+wallpaper01.png
+wallpaper02.png
+wallpaper03.png

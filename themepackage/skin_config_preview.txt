@@ -3,15 +3,25 @@
 
 #S5‘§¿¿Õº≈‰÷√
 S5_preview1=icon_preview.png
+
 S5_preview2=lockscreen_preview.png
+
 S5_preview3=widget_preview.png
 
+
+
 #D9‘§¿¿Õº≈‰÷√
+
 D9_preview1=icon_preview.png
+
 D9_preview2=lockscreen_preview.png
+
 D9_preview3=widget_preview.png
 
+
+
 #XUI‘§¿¿Õº≈‰÷√(‘§±∏)
-XUI_preview1=icon_preview.png
-XUI_preview2=lockscreen_preview.png
-XUI_preview3=widget_preview.png
+
+XUI_preview1=preview_wallpaper01.png
+XUI_preview2=preview_wallpaper02.png
+XUI_preview3=preview_wallpaper03.png
