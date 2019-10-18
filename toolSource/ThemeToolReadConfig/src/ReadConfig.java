@@ -51,7 +51,7 @@ public class ReadConfig {
 		/*//test.start
 		File file1 = new File(".");
 		System.out.println(file1.getAbsolutePath() + ", args = " + Arrays.toString(args));
-		String tempPlatform = "D9";
+		String tempPlatform = "XUI";
 		String tempPath = "testfiles/skin_config_"+tempPlatform+".xls";
 		String tempValuePath = "testfiles/values_"+tempPlatform;
 		args = new String[]{tempPlatform, tempPath, tempValuePath};
@@ -72,18 +72,31 @@ public class ReadConfig {
 		}
 
 		List<List<String>> infos = ExcelUtils.read(file.getAbsolutePath());
-
+		if(infos == null){
+			throw new NullPointerException("配置文件解析失败");
+		}
 
 		if(Platform.PLATFORM_D9.equals(sPlatform) || Platform.PLATFORM_S5.equals(sPlatform)) {
 			Properties properties = new Properties();
 			for (int i = VALUE_START_ROW_INDEX; i < infos.size(); i++) {
 				List<String> excelPairs = infos.get(i);
-				String value = excelPairs.get(VALUE_COLUMN_INDEX).trim();
+				String name = excelPairs.get(NAME_COLUMN_INDEX);
+				String s_v = excelPairs.get(VALUE_COLUMN_INDEX);
+				String beizhu = excelPairs.get(VALUE_COLUMN_INDEX + 1);
+				if(isEmpty(name) && isEmpty(s_v) && isEmpty(beizhu)){
+					continue;
+				}
+
+				if(isEmpty(name) || isEmpty(s_v)){
+					throw new NullPointerException("配置文件中有空值");
+				}
+
+				String value = s_v.trim();
 				if (!value.startsWith("#") && value.endsWith(".0")) {
 					//properties的value好像只能接受string值
-					properties.put(excelPairs.get(NAME_COLUMN_INDEX), String.valueOf(Float.valueOf(value).intValue()));
+					properties.put(name, String.valueOf(Float.valueOf(value).intValue()));
 				} else {
-					properties.put(excelPairs.get(NAME_COLUMN_INDEX), value);
+					properties.put(name, value);
 				}
 
 			}
@@ -106,35 +119,47 @@ public class ReadConfig {
 				List<String> excelPairs = infos.get(i);
 				System.out.println(excelPairs);
 				if(i < XUI_APP_LIST_START_ROW_INDEX) {
-					String value = excelPairs.get(VALUE_COLUMN_INDEX).trim();
+					String name = excelPairs.get(NAME_COLUMN_INDEX);
+					String s_v = excelPairs.get(VALUE_COLUMN_INDEX);
+					String beizhu = excelPairs.get(VALUE_COLUMN_INDEX + 1);
+					if(isEmpty(name) && isEmpty(s_v) && isEmpty(beizhu)){
+						continue;
+					}
+
+					if(isEmpty(name) || isEmpty(s_v)){
+						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
+					}
+
+					String value = s_v.trim();
+
 					if (!value.startsWith("#") && value.endsWith(".0")) {
 						//properties的value好像只能接受string值
-						properties.put(excelPairs.get(NAME_COLUMN_INDEX), String.valueOf(Float.valueOf(value).intValue()));
+						properties.put(name, String.valueOf(Float.valueOf(value).intValue()));
 					} else {
-						properties.put(excelPairs.get(NAME_COLUMN_INDEX), value);
+						properties.put(name, value);
 					}
 				}else {
-					String s = excelPairs.get(XUI_APP_PAGE_INDEX);
-					if(s == null || s.length() == 0){
-						if(page.getApps() == null && !pageList.contains(page)){
-							page.setPageIndex(lastPageIndex - 1);
-							page.setApps(appList);
-							pageList.add(page);
+					String screen = excelPairs.get(XUI_APP_PAGE_INDEX);
+					if(isEmpty(screen)){
+						String x = excelPairs.get(XUI_APP_LIST_X_INDEX);
+						String y = excelPairs.get(XUI_APP_LIST_Y_INDEX);
+						if(isEmpty(x) && isEmpty(y)) {
+							continue;
+						}else {
+							throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
 						}
-						continue;
 					}
 
-					String x1 = excelPairs.get(XUI_APP_LIST_X_INDEX);
-					if(x1 == null || x1.length() == 0){
-						if(page.getApps() == null && !pageList.contains(page)){
-							page.setPageIndex(lastPageIndex - 1);
-							page.setApps(appList);
-							pageList.add(page);
-						}
-						continue;
+					String x = excelPairs.get(XUI_APP_LIST_X_INDEX);
+					if(isEmpty(x)){
+						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
+					}
+					String y = excelPairs.get(XUI_APP_LIST_Y_INDEX);
+					if(isEmpty(y)){
+						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
 					}
 
-					int currPageIndex = Float.valueOf(s).intValue();
+					int currPageIndex = Float.valueOf(screen).intValue();
 					if(-1 == lastPageIndex){
 						lastPageIndex = currPageIndex;
 					}
@@ -153,10 +178,15 @@ public class ReadConfig {
 
 					Skin.App app = new Skin.App();
 					app.setIndex(appIndex++);
-					app.setX(Float.valueOf(x1).intValue());
-					app.setY(Float.valueOf(excelPairs.get(XUI_APP_LIST_Y_INDEX)).intValue());
+					app.setX(Float.valueOf(x).intValue());
+					app.setY(Float.valueOf(y).intValue());
 					appList.add(app);
 				}
+			}
+			if(page.getApps() == null && !pageList.contains(page)){
+				page.setPageIndex(lastPageIndex - 1);
+				page.setApps(appList);
+				pageList.add(page);
 			}
 			skin.setPages(pageList);
 
@@ -189,4 +219,7 @@ public class ReadConfig {
 		}
 	}
 
+	public static boolean isEmpty(String s){
+		return s == null || s.trim().isEmpty();
+	}
 }
