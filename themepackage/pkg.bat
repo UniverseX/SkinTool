@@ -46,7 +46,8 @@ call config_colors_dimens.bat %platform% %skin_config_file% %skin_values_path%
 if %errorlevel% == 0 (
 	echo 颜色和尺寸配置完成
 ) else (
-	echo 颜色和尺寸配置失败
+	echo 颜色和尺寸配置失败，请检查配置文件
+	pause & exit
 )
 echo --------------------
 
