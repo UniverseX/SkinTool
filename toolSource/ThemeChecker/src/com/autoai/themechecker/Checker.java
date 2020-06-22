@@ -15,35 +15,24 @@ import javax.swing.JFrame;
  *
  */
 public class Checker {
-	private static String standardSkinFiles_S5 = "./default_theme_files_S5.txt";
-	private static String standardSkinFiles_D9 = "./default_theme_files_D9.txt";
-	private static String standardSkinFiles_XUI = "./default_theme_files_XUI.txt";
+	private static String standardSkinFiles = "./default_theme_files.txt";
 	private static String ignoreCheckFiles = "./ignore_check.txt";
 	private static String parentPath = "./";
 	private static String dstCheckPath = parentPath;
-	private static DataModel dataModel_S5;
-	private static DataModel dataModel_D9;
-	private static DataModel dataModel_XUI;
+	private static DataModel dataModel;
 
 	public static void main(String[] args) {
 		loadDstPath();
 
-		if(!checkPath(standardSkinFiles_S5)
-				|| !checkPath(dstCheckPath) || !checkPath(standardSkinFiles_D9)
-				|| !checkPath(standardSkinFiles_XUI)
+		if(!checkPath(standardSkinFiles)
+				|| !checkPath(dstCheckPath)
 		){
 			return;
 		}
 
 		//１准备数据
-		dataModel_S5 = new DataModel(ignoreCheckFiles, standardSkinFiles_S5, dstCheckPath);
-		dataModel_S5.prepareStandData();
-
-		dataModel_D9 = new DataModel(ignoreCheckFiles, standardSkinFiles_D9, dstCheckPath);
-		dataModel_D9.prepareStandData();
-
-		dataModel_XUI = new DataModel(ignoreCheckFiles, standardSkinFiles_XUI, dstCheckPath);
-		dataModel_XUI.prepareStandData();
+		dataModel = new DataModel(ignoreCheckFiles, standardSkinFiles, dstCheckPath);
+		dataModel.prepareStandData();
 		//2.展示数据
 		showUi();
 	}
@@ -109,34 +98,8 @@ public class Checker {
 			@Override
 			public void onClick(String dstPath) {
 				f.remove(jf_demo1);
-				dataModel_S5.doCompare(dstPath);
-				jf_demo1.showResult(dataModel_S5.getStandardDiffArray(), dataModel_S5.getDstDiffArray());
-
-				f.add("Center", jf_demo1);
-				f.setSize(f.getPreferredSize());
-				f.setVisible(true);
-				f.pack();
-			}
-		});
-		jf_demo1.setOnClickListenerD9(new JF_demo1.OnClickListener() {
-			@Override
-			public void onClick(String dstPath) {
-				f.remove(jf_demo1);
-				dataModel_D9.doCompare(dstPath);
-				jf_demo1.showResult(dataModel_D9.getStandardDiffArray(), dataModel_D9.getDstDiffArray());
-
-				f.add("Center", jf_demo1);
-				f.setSize(f.getPreferredSize());
-				f.setVisible(true);
-				f.pack();
-			}
-		});
-		jf_demo1.setOnClickListenerXUI(new JF_demo1.OnClickListener() {
-			@Override
-			public void onClick(String dstPath) {
-				f.remove(jf_demo1);
-				dataModel_XUI.doCompare(dstPath);
-				jf_demo1.showResult(dataModel_XUI.getStandardDiffArray(), dataModel_XUI.getDstDiffArray());
+				dataModel.doCompare(dstPath);
+				jf_demo1.showResult(dataModel.getStandardDiffArray(), dataModel.getDstDiffArray());
 
 				f.add("Center", jf_demo1);
 				f.setSize(f.getPreferredSize());

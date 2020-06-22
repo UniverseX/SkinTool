@@ -21,9 +21,7 @@ import javax.swing.JScrollPane;
 
 public class JF_demo1 extends JApplet {
     private JEditorPane dstPathEditPanel;
-    private OnClickListener onClickListener_S5;
-    private OnClickListener onClickListener_D9;
-    private OnClickListener onClickListener_XUI;
+    private OnClickListener onClickListener;
     private String dstPath;
     private GridBagLayout gb_child2;
     private GridBagLayout gb_child3;
@@ -71,10 +69,10 @@ public class JF_demo1 extends JApplet {
         dstPathEditPanel = makeEditLabel(panel1, dstPath, gb_child1, cc1);
 
         GridBagConstraints cc2 = new GridBagConstraints();
-//        cc2.fill = GridBagConstraints.HORIZONTAL;
+        cc2.gridx = 1;
         cc2.weightx = 1;
 
-        makeButtonLabel(panel2, "检查S5", gb_child2, cc2, new ActionListener() {
+        makeButtonLabel(panel2, "开始检查", gb_child2, cc2, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 dstPath = dstPathEditPanel.getText();
@@ -82,44 +80,13 @@ public class JF_demo1 extends JApplet {
                 if(!file.exists()) {
                     JOptionPane.showMessageDialog(panel1, "路径不存在");
                 }else {
-                    if (onClickListener_S5 != null) {
-                        onClickListener_S5.onClick(dstPath);
+                    if (onClickListener != null) {
+                        onClickListener.onClick(dstPath);
                     }
                 }
             }
         });
         makeTitleLabel(panel2, "", gb_child2, cc2);
-
-        makeButtonLabel(panel2, "检查D9", gb_child2, cc2, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                dstPath = dstPathEditPanel.getText();
-                File file = new File(dstPath);
-                if(!file.exists()) {
-                    JOptionPane.showMessageDialog(panel1, "路径不存在");
-                }else {
-                    if (onClickListener_D9 != null) {
-                        onClickListener_D9.onClick(dstPath);
-                    }
-                }
-            }
-        });
-
-        cc2.gridwidth = GridBagConstraints.REMAINDER;
-        makeButtonLabel(panel2, "检查XUI", gb_child2, cc2, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                dstPath = dstPathEditPanel.getText();
-                File file = new File(dstPath);
-                if(!file.exists()) {
-                    JOptionPane.showMessageDialog(panel1, "路径不存在");
-                }else {
-                    if (onClickListener_XUI != null) {
-                        onClickListener_XUI.onClick(dstPath);
-                    }
-                }
-            }
-        });
 
         //lazy load
 //        showResult();
@@ -227,14 +194,6 @@ public class JF_demo1 extends JApplet {
     }
 
     public void setOnClickListenerS5(OnClickListener onClickListener) {
-        this.onClickListener_S5 = onClickListener;
-    }
-
-    public void setOnClickListenerD9(OnClickListener onClickListener) {
-        this.onClickListener_D9 = onClickListener;
-    }
-
-    public void setOnClickListenerXUI(OnClickListener onClickListener) {
-        this.onClickListener_XUI = onClickListener;
+        this.onClickListener = onClickListener;
     }
 }
