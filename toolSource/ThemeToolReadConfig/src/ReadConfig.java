@@ -76,7 +76,7 @@ public class ReadConfig {
 			throw new NullPointerException("配置文件解析失败");
 		}
 
-		if(Platform.PLATFORM_D9.equals(sPlatform) || Platform.PLATFORM_S5.equals(sPlatform)) {
+		if(!Platform.PLATFORM_VUI.equals(sPlatform)) {
 			Properties properties = new Properties();
 			for (int i = VALUE_START_ROW_INDEX; i < infos.size(); i++) {
 				List<String> excelPairs = infos.get(i);
@@ -107,7 +107,7 @@ public class ReadConfig {
 
 			WriteConfig.copyColors(properties, sValues_path + "/colors.xml");
 			WriteConfig.copyDimens(properties, sValues_path + "/dimens.xml");
-		}else if(Platform.PLATFORM_VUI.equals(sPlatform)){
+		}else {
 			Properties properties = new Properties();
 			Skin skin = new Skin();
 			Skin.Page page = new Skin.Page();

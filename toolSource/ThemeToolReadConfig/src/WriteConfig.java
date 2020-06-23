@@ -81,7 +81,7 @@ public class WriteConfig {
             for (Node color : colors) {
                 System.out.println("--------------");
                 Node colorFirstChild = color.getFirstChild();
-                System.out.println("color ChildNode.value=" + colorFirstChild.getNodeValue());
+                System.out.println("old color ChildNode.value=" + colorFirstChild.getNodeValue());
                 if(color.hasAttributes()) {
                     NamedNodeMap attributes = color.getAttributes();
                     Node namedItem = attributes.getNamedItem(ATTR_NAME);
@@ -92,7 +92,7 @@ public class WriteConfig {
                                 String property = properties.getProperty(node.getNodeValue());
                                 System.out.println("properties value = " + property);
                                 colorFirstChild.setNodeValue(property);
-                                System.out.println("color ChildNode.value=" + colorFirstChild.getNodeValue());
+                                System.out.println("new color ChildNode.value=" + colorFirstChild.getNodeValue());
                             }
                             break;
                         }
@@ -113,7 +113,7 @@ public class WriteConfig {
             for (Node dimen : dimens) {
                 System.out.println("--------------");
                 Node dimenFirstChild = dimen.getFirstChild();
-                System.out.println("dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
+                System.out.println("old dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
                 if(dimen.hasAttributes()) {
                     NamedNodeMap attributes = dimen.getAttributes();
                     Node namedItem = attributes.getNamedItem(ATTR_NAME);
@@ -123,13 +123,13 @@ public class WriteConfig {
                             if (properties.containsKey(node.getNodeValue())) {
                                 String property = properties.getProperty(node.getNodeValue());
                                 System.out.println("properties value = " + property);
-                                if(property.endsWith("px") || property.endsWith("dp")){
+                                if(property.endsWith("px")){
 									dimenFirstChild.setNodeValue(property);
 								}else {
-									dimenFirstChild.setNodeValue(property+"dp");
+									dimenFirstChild.setNodeValue(property+"px");
 								}
 
-                                System.out.println("dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
+                                System.out.println("new dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
                             }
                             break;
                         }
