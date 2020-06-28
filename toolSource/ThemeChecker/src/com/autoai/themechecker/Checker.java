@@ -31,7 +31,11 @@ public class Checker {
 		}
 
 		//１准备数据
-		dataModel = new DataModel(ignoreCheckFiles, standardSkinFiles, dstCheckPath);
+		if(args != null && "A7".equals(args[0])){
+			dataModel = new DataModelJpg(ignoreCheckFiles, standardSkinFiles, dstCheckPath);
+		}else {
+			dataModel = new DataModelPng(ignoreCheckFiles, standardSkinFiles, dstCheckPath);
+		}
 		dataModel.prepareStandData();
 		//2.展示数据
 		showUi();
