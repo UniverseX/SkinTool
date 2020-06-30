@@ -4,11 +4,13 @@ set platform=%1%
 
 set src_path=%2%
 
-set dst_path=%3%
+set res_path=%3%
 
 set prew_path=%4%
 
 set assets_path=%5%
+
+set device_ratio=%6%
 
 set dirname=%~dp0
 
@@ -23,11 +25,19 @@ for /r "%dirname%" %%i in (*.ini) do (
 	)
 )
 @rem del old pngs
-for /r %dst_path% %%f in (*.png) do (
-	if exist "%%f" (
-		del /q "%%f"
-	)
+setlocal enabledelayedexpansion
+set filterStr="drawable-"
+for /f %%f in ('dir %res_path% /a:d/s/b') do (
+	set drawabledir="%%~nxf"
+	echo drawabledir=!drawabledir!
+	echo !drawabledir!|find /i %filterStr%>nul 2>nul && rd /s /q %%f || echo DONT_DELETE
 )
+endlocal
+@rem make new drawable dir
+set drawable_dir=\drawable-nodpi-%device_ratio%
+set dst_path=%res_path%%drawable_dir%
+echo dst_path=%dst_path%
+md %dst_path%
 
 @rem 适配D9
 set extra_load_png=%root%\ThemeSkinD9\extra\home_player_load.png
@@ -63,7 +73,22 @@ for /r "%src_path%" %%j in (*.png) do (
 		set /a num_pngs+=1 
 	)
 )
-echo 共复制res图片%num_pngs%个
+echo 共复制res_png图片%num_pngs%个
+
+@rem start copy jpgs
+echo platform=%platform%
+if "%platform%" == "A7" (
+    set /a num_jpgs=0
+	for /r "%src_path%" %%j in (*.jpg) do (
+		set rev=!preview_revmap[%%~nj]!
+		if "!rev!" equ "" (
+			copy "%%j" "%dst_path%"
+			echo copy_jpg=%%j
+			set /a num_jpgs+=1
+		)
+	)
+	echo 共复制res_jpg图片%num_jpgs%个
+)
 
 @rem 拷贝预览图
 set /a num_prevew=0
