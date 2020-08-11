@@ -13,15 +13,11 @@ import java.util.List;
 public class DataModelJpg implements DataModel {
     private String[] standardDiffArray;
     private String[] dstDiffArray;
-    private String ignorePath;
     private String standardPath;
-    private String dstPath;
     private List<String> standardPngs;
 
     public DataModelJpg(String ignorePath, String standardPath, String dstPath) {
-        this.ignorePath = ignorePath;
         this.standardPath = standardPath;
-        this.dstPath = dstPath;
     }
 
     public void prepareStandData(){

@@ -196,4 +196,12 @@ public class JF_demo1 extends JApplet {
     public void setOnClickListenerS5(OnClickListener onClickListener) {
         this.onClickListener = onClickListener;
     }
+
+    public OnClickListener getOnClickListener() {
+        return onClickListener;
+    }
+
+    public JEditorPane getDstPathEditPanel() {
+        return dstPathEditPanel;
+    }
 }
