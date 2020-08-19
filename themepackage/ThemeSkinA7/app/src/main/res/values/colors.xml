@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <!--themes-->
+    <color name="ic_text_color">#FFFFFF</color>
+    <color name="widget_text_color">#2B3A84</color>
+    <color name="widget_btn_text_color">#cc2B3A84</color><!--二级标题色值-->
+    <color name="widget_flow_text_color">#FFFFFF</color><!--剩余流量色值-->
+    <color name="widget_author_text_color">#2B3A84</color><!--授权色值-->
+    <color name="widget_unauthor_text_color">#7F2B3A84</color><!--未授权色值-->
+    <color name="driving_text_clolor">#FFFFFF</color><!--时间/速度/导航信息文字色值-->
+    <color name="driving_assist_text_clolor">#ccFFFFFF</color>
+    <!--themes-->
+
+    <color name="indicating_lan_interval">#323F58</color>
+</resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
     <dimen name="app_item_text_margin_bottom">36dp</dimen>
-    <dimen name="third_pard_app_icon_size">72dp</dimen>
-    <dimen name="third_pard_app_icon_margin_top">89dp</dimen>
-    <dimen name="third_pard_app_icon_corner">16dp</dimen>
+    <dimen name="third_pard_app_icon_size">80px</dimen>
+    <dimen name="third_pard_app_icon_margin_top">90px</dimen>
+    <dimen name="third_pard_app_icon_corner">12px</dimen>
 </resources>

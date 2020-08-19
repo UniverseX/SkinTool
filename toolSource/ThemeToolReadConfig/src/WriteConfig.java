@@ -72,6 +72,7 @@ public class WriteConfig {
 
     public static final String TAG_COLOR = "color";
     public static final String TAG_DIMEN= "dimen";
+    public static final String TAG_INTEGER= "integer";
     public static final String ATTR_NAME = "name";
 	public static void copyColors(Properties properties, String colorXml) {
         try {
@@ -79,20 +80,20 @@ public class WriteConfig {
             List<Node> colors = XmlUtil.loadNodeList(document, TAG_COLOR);
             List<Node> nodes = XmlUtil.loadAttrList(document, TAG_COLOR, ATTR_NAME);
             for (Node color : colors) {
-                System.out.println("--------------");
+                System.out.println("**********************");
                 Node colorFirstChild = color.getFirstChild();
-                System.out.println("old color ChildNode.value=" + colorFirstChild.getNodeValue());
+                String oldValue = colorFirstChild.getNodeValue();
                 if(color.hasAttributes()) {
                     NamedNodeMap attributes = color.getAttributes();
                     Node namedItem = attributes.getNamedItem(ATTR_NAME);
                     for (Node node : nodes) {
                         if (node.equals(namedItem)) {
-                            System.out.println("attr = "+ node.getNodeValue());
-                            if (properties.containsKey(node.getNodeValue())) {
-                                String property = properties.getProperty(node.getNodeValue());
-                                System.out.println("properties value = " + property);
+                            String nodeValue = node.getNodeValue();
+                            System.out.println("attr.name = "+ nodeValue);
+                            if (properties.containsKey(nodeValue)) {
+                                String property = properties.getProperty(nodeValue);
                                 colorFirstChild.setNodeValue(property);
-                                System.out.println("new color ChildNode.value=" + colorFirstChild.getNodeValue());
+                                System.out.println("change value from:" + oldValue + " to:" + colorFirstChild.getNodeValue());
                             }
                             break;
                         }
@@ -111,25 +112,49 @@ public class WriteConfig {
             List<Node> dimens = XmlUtil.loadNodeList(document, TAG_DIMEN);
             List<Node> nodes = XmlUtil.loadAttrList(document, TAG_DIMEN, ATTR_NAME);
             for (Node dimen : dimens) {
-                System.out.println("--------------");
+                System.out.println("**********************");
                 Node dimenFirstChild = dimen.getFirstChild();
-                System.out.println("old dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
+                String oldValue = dimenFirstChild.getNodeValue();
                 if(dimen.hasAttributes()) {
                     NamedNodeMap attributes = dimen.getAttributes();
                     Node namedItem = attributes.getNamedItem(ATTR_NAME);
                     for (Node node : nodes) {
                         if (node.equals(namedItem)) {
-                            System.out.println("attr = "+ node.getNodeValue());
-                            if (properties.containsKey(node.getNodeValue())) {
-                                String property = properties.getProperty(node.getNodeValue());
-                                System.out.println("properties value = " + property);
+                            String nodeValue = node.getNodeValue();
+                            System.out.println("attr.name = "+ nodeValue);
+                            if (properties.containsKey(nodeValue)) {
+                                String property = properties.getProperty(nodeValue);
                                 if(property.endsWith("px")){
 									dimenFirstChild.setNodeValue(property);
 								}else {
 									dimenFirstChild.setNodeValue(property+"px");
 								}
+                                System.out.println("change value from:" + oldValue + " to:" + dimenFirstChild.getNodeValue());
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
 
-                                System.out.println("new dimen ChildNode.value=" + dimenFirstChild.getNodeValue());
+            //integer
+            List<Node> integers = XmlUtil.loadNodeList(document, TAG_INTEGER);
+            List<Node> intnodes = XmlUtil.loadAttrList(document, TAG_INTEGER, ATTR_NAME);
+            for (Node integer : integers) {
+                System.out.println("**********************");
+                Node intFirstChild = integer.getFirstChild();
+                String oldValue = intFirstChild.getNodeValue();
+                if(integer.hasAttributes()) {
+                    NamedNodeMap attributes = integer.getAttributes();
+                    Node namedItem = attributes.getNamedItem(ATTR_NAME);
+                    for (Node node : intnodes) {
+                        if (node.equals(namedItem)) {
+                            String nodeValue = node.getNodeValue();
+                            System.out.println("attr.name = "+ nodeValue);
+                            if (properties.containsKey(nodeValue)) {
+                                String property = properties.getProperty(nodeValue);
+                                intFirstChild.setNodeValue(property);
+                                System.out.println("change value from:" + oldValue + " to:" + intFirstChild.getNodeValue());
                             }
                             break;
                         }

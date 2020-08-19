@@ -1,14 +1,15 @@
 import com.google.gson.Gson;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
 import utils.ExcelUtils;
-import utils.IOUtil;
 import xuibean.Skin;
 
 public class ReadConfig {
@@ -37,24 +38,26 @@ public class ReadConfig {
 	/**
 	 * 仿XUI天气时钟组件 位置索引
 	 */
-	private static final int XUI_APP_PAGE_INDEX = 0;
-	private static final int XUI_APP_LIST_X_INDEX = 1;
-	private static final int XUI_APP_LIST_Y_INDEX = 2;
-	private static final int XUI_VALUE_START_ROW = 3;
+	private static final int XUI_PROPERTIES_START_ROW_INDEX = 4;
+	private static final int XUI_PROPERTIES_END_ROW_INDEX = 26;
+	private static final int XUI_APP_JSON_START_ROW_INDEX = 28;
+	private static final int XUI_APP_JSON_END_ROW_INDEX = 46;
 
 	/**
 	 * 仿XUI app列表位置参数
 	 */
 	private static final int XUI_APP_LIST_START_ROW_INDEX = 15;
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
+		String localSrcPath = "";
 		/*//test.start
 		File file1 = new File(".");
 		System.out.println(file1.getAbsolutePath() + ", args = " + Arrays.toString(args));
 		String tempPlatform = "XUI";
-		String tempPath = "testfiles/skin_config_"+tempPlatform+".xls";
-		String tempValuePath = "testfiles/values_"+tempPlatform;
+		String tempPath = "testfiles/skin_config_" + tempPlatform + ".xls";
+		String tempValuePath = "testfiles/values_" + tempPlatform;
 		args = new String[]{tempPlatform, tempPath, tempValuePath};
+		localSrcPath = "src/";
 		//test.end*/
 		if (args.length < 3) {
 			System.out.println("path args error");
@@ -65,29 +68,48 @@ public class ReadConfig {
 		sValues_path = args[2];
 
 		File file = new File(sConfig_path);
-		if(!file.exists()){
+		if (!file.exists()) {
 			System.out.println("配置文件不存在");
 			System.exit(1);
 			return;
 		}
 
-		List<List<String>> infos = ExcelUtils.read(file.getAbsolutePath());
-		if(infos == null){
-			throw new NullPointerException("配置文件解析失败");
+		String modelXls_path = sValues_path.substring(0, sValues_path.indexOf("ThemeSkin")) + "\\UI标注模板" + "\\skin_config_" + sPlatform + ".xls";
+		File fileModel = new File(modelXls_path);
+		if (!fileModel.exists()) {
+			System.out.println("模板文件不存在");
+			System.exit(1);
+			return;
 		}
 
-		if(!Platform.PLATFORM_VUI.equals(sPlatform)) {
+		List<List<String>> modelList = ExcelUtils.read(fileModel.getAbsolutePath());
+		if(modelList == null) {
+			System.out.println("模板文件解析失败");
+			System.exit(1);
+		}
+
+		List<List<String>> infos = ExcelUtils.read(file.getAbsolutePath());
+		if (infos == null) {
+			System.out.println("配置文件解析失败");
+			System.exit(1);
+		}
+		if (modelList.size() != infos.size()) {
+			System.out.println("模板文件和主题配置文件行数不一致");
+			System.exit(1);
+		}
+
+		if (!Platform.PLATFORM_VUI.equals(sPlatform)) {
 			Properties properties = new Properties();
 			for (int i = VALUE_START_ROW_INDEX; i < infos.size(); i++) {
 				List<String> excelPairs = infos.get(i);
 				String name = excelPairs.get(NAME_COLUMN_INDEX);
 				String s_v = excelPairs.get(VALUE_COLUMN_INDEX);
 				String beizhu = excelPairs.get(VALUE_COLUMN_INDEX + 1);
-				if(isEmpty(name) && isEmpty(s_v) && isEmpty(beizhu)){
+				if (isEmpty(name) && isEmpty(s_v) && isEmpty(beizhu)) {
 					continue;
 				}
 
-				if(isEmpty(name) || isEmpty(s_v)){
+				if (isEmpty(name) || isEmpty(s_v)) {
 					throw new NullPointerException("配置文件中有空值");
 				}
 
@@ -101,125 +123,138 @@ public class ReadConfig {
 
 			}
 
-			System.out.println(properties);
-
-			System.out.println("test.value=" + properties.getProperty("third_pard_app_icon_corner"));
-
 			WriteConfig.copyColors(properties, sValues_path + "/colors.xml");
 			WriteConfig.copyDimens(properties, sValues_path + "/dimens.xml");
-		}else {
+		} else {
+			//to colors and dimens
 			Properties properties = new Properties();
-			Skin skin = new Skin();
-			Skin.Page page = new Skin.Page();
-			List<Skin.Page> pageList = new ArrayList<>();
-			List<Skin.App> appList = new ArrayList<>();
-			int appIndex = 0;
-			int lastPageIndex = -1;
-			for (int i = XUI_VALUE_START_ROW; i < infos.size(); i++) {
-				List<String> excelPairs = infos.get(i);
-				System.out.println(excelPairs);
-				if(i < XUI_APP_LIST_START_ROW_INDEX) {
-					String name = excelPairs.get(NAME_COLUMN_INDEX);
-					String s_v = excelPairs.get(VALUE_COLUMN_INDEX);
-					String beizhu = excelPairs.get(VALUE_COLUMN_INDEX + 1);
-					if(isEmpty(name) && isEmpty(s_v) && isEmpty(beizhu)){
+			try {
+				properties.loadFromXML(new FileInputStream(localSrcPath + "properties_xml/theme_properties_XUI.xml"));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			for (int i = XUI_PROPERTIES_START_ROW_INDEX; i < XUI_PROPERTIES_END_ROW_INDEX; i++) {
+				List<String> rowInfos = infos.get(i);
+				int columns = rowInfos.size();
+				for (int j = 0; j < columns; j++) {
+					String key = rowInfos.get(j);
+					if (isEmpty(key)) {
 						continue;
 					}
-
-					if(isEmpty(name) || isEmpty(s_v)){
-						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
-					}
-
-					String value = s_v.trim();
-
-					if (!value.startsWith("#") && value.endsWith(".0")) {
-						//properties的value好像只能接受string值
-						properties.put(name, String.valueOf(Float.valueOf(value).intValue()));
-					} else {
-						properties.put(name, value);
-					}
-				}else {
-					String screen = excelPairs.get(XUI_APP_PAGE_INDEX);
-					if(isEmpty(screen)){
-						String x = excelPairs.get(XUI_APP_LIST_X_INDEX);
-						String y = excelPairs.get(XUI_APP_LIST_Y_INDEX);
-						if(isEmpty(x) && isEmpty(y)) {
-							continue;
-						}else {
-							throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
+					if (properties.containsKey(key)) {
+						String value = infos.get(i + 1).get(j);
+						if (!value.startsWith("#")) {
+							String valueStr = String.valueOf(Float.valueOf(value).intValue());
+							if(key.endsWith("_color")){//如果颜色为0，默认#ffffff
+								if (isEmpty(valueStr) || valueStr.endsWith("0")) {
+									valueStr = "#ffffff";
+								}
+								properties.setProperty(key, valueStr);
+							}else {
+								properties.setProperty(key, valueStr);
+							}
+						} else {
+							properties.setProperty(key, value);
 						}
 					}
+				}
+			}
+			WriteConfig.copyColors(properties, sValues_path + "/colors.xml");
+			WriteConfig.copyDimens(properties, sValues_path + "/dimens.xml");
 
-					String x = excelPairs.get(XUI_APP_LIST_X_INDEX);
-					if(isEmpty(x)){
-						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
-					}
-					String y = excelPairs.get(XUI_APP_LIST_Y_INDEX);
-					if(isEmpty(y)){
-						throw new NullPointerException("配置文件中有空值, 第 " + (i + 1) +" 行");
-					}
+			//to json
+			Skin skin = new Skin();
+			List<Skin.Page> pageList = new ArrayList<>();
+			skin.setPages(pageList);
 
-					int currPageIndex = Float.valueOf(screen).intValue();
-					if(-1 == lastPageIndex){
-						lastPageIndex = currPageIndex;
-					}
-					if(lastPageIndex != currPageIndex){
-						//store
-						page.setPageIndex(lastPageIndex-1);
-						page.setApps(appList);
-						pageList.add(page);
-
-						//new
-						lastPageIndex = currPageIndex;
-						page = new Skin.Page();
-						appList = new ArrayList<>();
-					}
-					System.out.println("PageIndex = " + lastPageIndex);
-
+			int tmpPage = -1;
+			for (int i = XUI_APP_JSON_START_ROW_INDEX; i < XUI_APP_JSON_END_ROW_INDEX; i++) {
+				List<String> rowInfos = infos.get(i);
+				String pageStr = rowInfos.get(0);
+				if (isEmpty(pageStr)) {
+					continue;
+				}
+				int pageNum = Float.valueOf(pageStr).intValue();
+				Skin.Page page;
+				if (tmpPage != pageNum) {
+					tmpPage = pageNum;
+					//create page
+					page = new Skin.Page();
+					page.setPageIndex(pageNum - 1);
+					List<Skin.App> appList = new ArrayList<>();
+					page.setApps(appList);
+					//add page
+					pageList.add(page);
+					//create app
 					Skin.App app = new Skin.App();
-					app.setIndex(appIndex++);
-					app.setX(Float.valueOf(x).intValue());
-					app.setY(Float.valueOf(y).intValue());
+					//set attrs
+					app.setIndex(i - XUI_APP_JSON_START_ROW_INDEX);
+					app.setX(strToInt(rowInfos.get(1)));
+					app.setY(strToInt(rowInfos.get(2)));
+					app.setIcon_size(strToInt(rowInfos.get(3)));
+					app.setLabel_relative_loc(strToInt(rowInfos.get(4)));
+					app.setMargin_text_icon(strToInt(rowInfos.get(5)));
+					try {
+						app.setText_color(checkColor(rowInfos.get(6)));
+					}catch (IllegalArgumentException e) {
+						System.out.println("主题配置文件：app颜色参数有错，" + e.getMessage());
+						System.exit(1);
+					}
+					app.setIcon_padding(strToInt(rowInfos.get(7)));
+					appList.add(app);
+				} else {
+					page = pageList.get(pageNum - 1);
+					List<Skin.App> appList = page.getApps();
+					Skin.App app = new Skin.App();
+					//set attrs
+					app.setIndex(i - XUI_APP_JSON_START_ROW_INDEX);
+					app.setX(strToInt(rowInfos.get(1)));
+					app.setY(strToInt(rowInfos.get(2)));
+					app.setIcon_size(strToInt(rowInfos.get(3)));
+					app.setLabel_relative_loc(strToInt(rowInfos.get(4)));
+					app.setMargin_text_icon(strToInt(rowInfos.get(5)));
+					app.setText_color(checkColor(rowInfos.get(6)));
+					app.setIcon_padding(strToInt(rowInfos.get(7)));
 					appList.add(app);
 				}
 			}
-			if(page.getApps() == null && !pageList.contains(page)){
-				page.setPageIndex(lastPageIndex - 1);
-				page.setApps(appList);
-				pageList.add(page);
-			}
-			skin.setPages(pageList);
-
-			System.out.println(properties);
-
-			WriteConfig.copyColors(properties, sValues_path + "/colors.xml");
-			WriteConfig.copyDimens(properties, sValues_path + "/dimens.xml");
-
+//			System.out.println(skin);
 
 			String json = new Gson().toJson(skin);
-			String assetsPath = sValues_path+"/../../" +"assets";
+			String assetsPath = sValues_path + "/../../" + "assets";
 			File skinJsonFileDir = new File(assetsPath);
-			if(!skinJsonFileDir.exists()){
+			if (!skinJsonFileDir.exists()) {
 				boolean skinJsonFileMake = skinJsonFileDir.mkdirs();
-				if(!skinJsonFileMake){
+				if (!skinJsonFileMake) {
 					System.out.println("make dir failed " + skinJsonFileDir.getAbsolutePath());
 					System.exit(1);
 					return;
 				}
 			}
 			try {
-				FileWriter fileWriter = new FileWriter(skinJsonFileDir+"/skin.json", false);
+				FileWriter fileWriter = new FileWriter(skinJsonFileDir + "/skin.json", false);
 				fileWriter.write(json);
 				fileWriter.flush();
 				fileWriter.close();
-			}catch (Exception e){
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 
 		}
 	}
 
-	public static boolean isEmpty(String s){
+	public static boolean isEmpty(String s) {
 		return s == null || s.trim().isEmpty();
+	}
+
+	public static int strToInt(String s) {
+		return isEmpty(s) ? 0 : Float.valueOf(s).intValue();
+	}
+
+	public static String checkColor(String colorString) {
+		if (colorString.charAt(0) != '#' || (colorString.length() != 7 && colorString.length() != 9)) {
+			throw new IllegalArgumentException("Unknown color");
+		}
+		return colorString;
 	}
 }

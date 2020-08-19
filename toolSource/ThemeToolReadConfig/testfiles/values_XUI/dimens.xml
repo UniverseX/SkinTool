@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
-    <dimen name="margin_text_icon">77dp</dimen>
-    <dimen name="weather_clock_x">412dp</dimen>
-    <dimen name="weather_clock_y">78dp</dimen>
+    <!--数字时钟widget-->
+    <integer name="weather_clock_visible">0</integer>
+    <integer name="weather_clock_page">0</integer>
+    <dimen name="weather_clock_x">0px</dimen>
+    <dimen name="weather_clock_y">0px</dimen>
+    <dimen name="time_text_size">0px</dimen>
+    <dimen name="date_text_size">0px</dimen>
+    <!--数字时钟widget-->
+
+    <!--指针时钟widget-->
+    <integer name="pointer_clock_visible">1</integer>
+    <integer name="pointer_clock_page">1</integer>
+    <dimen name="pointer_clock_x">307px</dimen>
+    <dimen name="pointer_clock_y">95px</dimen>
+    <dimen name="pointer_clock_width">410px</dimen>
+    <dimen name="pointer_clock_height">410px</dimen>
+    <!--指针时钟widget-->
+
+    <!--音乐widget-->
+    <integer name="widget_music_visible">0</integer>
+    <integer name="widget_music_page">0</integer>
+    <dimen name="widget_music_x">0px</dimen>
+    <dimen name="widget_music_y">0px</dimen>
+    <dimen name="widget_music_width">0px</dimen>
+    <dimen name="widget_music_height">0px</dimen>
+
+    <integer name="music_album_visible">0</integer>
+    <dimen name="music_album_inner_x">0px</dimen>
+    <dimen name="music_album_inner_y">0px</dimen>
+
+    <integer name="music_song_name_visible">0</integer>
+    <dimen name="music_song_name_inner_x">0px</dimen>
+    <dimen name="music_song_name_inner_y">0px</dimen>
+
+    <integer name="music_singer_name_visible">0</integer>
+    <dimen name="music_singer_name_inner_x">0px</dimen>
+    <dimen name="music_singer_name_inner_y">0px</dimen>
+    <!--音乐widget-->
+
+    <!--导航widget-->
+    <integer name="widget_navi_visible">0</integer>
+    <integer name="widget_navi_page">0</integer>
+    <dimen name="widget_navi_x">0px</dimen>
+    <dimen name="widget_navi_y">0px</dimen>
+    <dimen name="widget_navi_width">0px</dimen>
+    <dimen name="widget_navi_height">0px</dimen>
+    <dimen name="navi_ic_inner_x">0px</dimen>
+    <dimen name="navi_ic_inner_y">0px</dimen>
+    <dimen name="navi_distance_inner_x">0px</dimen>
+    <dimen name="navi_distance_inner_y">0px</dimen>
+    <dimen name="navi_next_road_inner_x">0px</dimen>
+    <dimen name="navi_next_road_inner_y">0px</dimen>
+    <dimen name="navi_distance_text_size">0px</dimen>
+    <dimen name="navi_next_road_text_size">0px</dimen>
+    <!--导航widget-->
 </resources>

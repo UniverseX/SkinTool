@@ -1,4 +1,5 @@
 @echo off
+
 set platform=%1
 set CONFIG_PATH=%2%
 set VALUE_PATH=%3%
@@ -9,7 +10,7 @@ echo VALUE_PATH=%VALUE_PATH%
 @rem java env 
 SET JAVA_HOME=../jdk
 SET CLASSPATH=%JAVA_HOME%/lib/tools.jar;%JAVA_HOME%/lib/dt.jar
-SET Path=%JAVA_HOME%/jre/bin;%JAVA_HOME%/lib;%CLASSPATH%;
+@rem SET path=%path%;%JAVA_HOME%/jre/bin;%JAVA_HOME%/lib;%CLASSPATH%;
 
 @rem param
 set ROOT=%DIRNAME%..
