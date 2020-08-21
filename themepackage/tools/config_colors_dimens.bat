@@ -4,6 +4,7 @@ set product=%1%
 set platform=%2%
 set CONFIG_PATH=%3%
 set VALUE_PATH=%4%
+set assets_path=%5%
 
 @rem java env 
 SET JAVA_HOME=../jdk
@@ -17,6 +18,10 @@ set ROOT=%DIRNAME%..
 if exist tmp.properties (
  del /q tmp.properties
 )
+
+@rem clear assets
+rd /s /q %assets_path%
+md %assets_path%
 
 if "%platform%" == "" call platformFail.bat CONFIG_PATH "%CONFIG_PATH%"
 

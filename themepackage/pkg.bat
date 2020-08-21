@@ -58,7 +58,7 @@ cd tools
 
 @rem 配置颜色和尺寸
 echo 开始配置颜色和尺寸
-call config_colors_dimens.bat %product% %real_platform% %skin_config_file% %skin_values_path%
+call config_colors_dimens.bat %product% %real_platform% %skin_config_file% %skin_values_path% %skin_assets_path%
 if %errorlevel% == 0 (
 	echo 颜色和尺寸配置完成
 ) else (
