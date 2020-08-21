@@ -10,9 +10,13 @@ build/
 *.class
 *.bak
 *.xml
+*.iml
+*.json
+skin_config_preview.txt
 themepackage/skins/
 toolSource/ThemeChecker/bin/
 toolSource/ThemeChecker/out/
 toolSource/ThemeChecker/.idea/
 toolSource/ThemeToolReadConfig/.idea/
 toolSource/ThemeToolReadConfig/out/
+toolSource/ThemeToolReadConfig/bin/

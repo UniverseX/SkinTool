@@ -1,11 +1,9 @@
 @echo off
 
-set platform=%1
-set CONFIG_PATH=%2%
-set VALUE_PATH=%3%
-
-echo CONFIG_PATH=%CONFIG_PATH%
-echo VALUE_PATH=%VALUE_PATH%
+set product=%1%
+set platform=%2%
+set CONFIG_PATH=%3%
+set VALUE_PATH=%4%
 
 @rem java env 
 SET JAVA_HOME=../jdk
@@ -20,6 +18,10 @@ if exist tmp.properties (
  del /q tmp.properties
 )
 
-if "%platform%" equ "" call platformFail.bat CONFIG_PATH "%CONFIG_PATH%"
+if "%platform%" == "" call platformFail.bat CONFIG_PATH "%CONFIG_PATH%"
 
-java -jar skin_config_reader.jar %platform% "%CONFIG_PATH%" "%VALUE_PATH%"
+set product_=""
+if "%product%" == "XUI" (
+	set product_=%product%_
+)
+java -jar %product_%skin_config_reader.jar %product% %platform% "%CONFIG_PATH%" "%VALUE_PATH%"

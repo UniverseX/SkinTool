@@ -16,6 +16,7 @@ public class ReadConfig {
 	private static String sPlatform;
 	private static String sConfig_path;
 	private static String sValues_path;
+	private static String sProduct;
 	/**
 	 * 实际值开始行索引
 	 */
@@ -63,18 +64,21 @@ public class ReadConfig {
 			System.out.println("path args error");
 			return;
 		}
-		sPlatform = args[0];
-		sConfig_path = args[1];
-		sValues_path = args[2];
+		sProduct = args[0];
+		sPlatform = args[1];
+		sConfig_path = args[2];
+		sValues_path = args[3];
 
 		File file = new File(sConfig_path);
+		System.out.println("配置文件路径：" + file.getAbsolutePath());
 		if (!file.exists()) {
 			System.out.println("配置文件不存在");
 			System.exit(1);
 			return;
 		}
 
-		String modelXls_path = sValues_path.substring(0, sValues_path.indexOf("ThemeSkin")) + "\\UI标注模板" + "\\skin_config_" + sPlatform + ".xls";
+		String modelXls_path = sValues_path.substring(0, sValues_path.indexOf("ThemeSkin")) + "\\UI标注模板" + "\\skin_config_" + sProduct + ".xls";
+		System.out.println("模板文件路径：" + modelXls_path);
 		File fileModel = new File(modelXls_path);
 		if (!fileModel.exists()) {
 			System.out.println("模板文件不存在");
@@ -83,7 +87,7 @@ public class ReadConfig {
 		}
 
 		List<List<String>> modelList = ExcelUtils.read(fileModel.getAbsolutePath());
-		if(modelList == null) {
+		if (modelList == null) {
 			System.out.println("模板文件解析失败");
 			System.exit(1);
 		}
@@ -114,8 +118,8 @@ public class ReadConfig {
 				}
 
 				String value = s_v.trim();
-				if (!value.startsWith("#") && value.endsWith(".0")) {
-					//properties的value好像只能接受string值
+				if (!value.startsWith("#")) {
+					//去掉.0后缀
 					properties.put(name, String.valueOf(Float.valueOf(value).intValue()));
 				} else {
 					properties.put(name, value);
@@ -129,7 +133,7 @@ public class ReadConfig {
 			//to colors and dimens
 			Properties properties = new Properties();
 			try {
-				properties.loadFromXML(new FileInputStream(localSrcPath + "properties_xml/theme_properties_XUI.xml"));
+				properties.loadFromXML(new FileInputStream(localSrcPath + "properties_xml/theme_properties_" + sProduct +".xml"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -144,6 +148,7 @@ public class ReadConfig {
 					if (properties.containsKey(key)) {
 						String value = infos.get(i + 1).get(j);
 						if (!value.startsWith("#")) {
+							//去掉.0后缀
 							String valueStr = String.valueOf(Float.valueOf(value).intValue());
 							if(key.endsWith("_color")){//如果颜色为0，默认#ffffff
 								if (isEmpty(valueStr) || valueStr.endsWith("0")) {
@@ -196,7 +201,7 @@ public class ReadConfig {
 					app.setMargin_text_icon(strToInt(rowInfos.get(5)));
 					try {
 						app.setText_color(checkColor(rowInfos.get(6)));
-					}catch (IllegalArgumentException e) {
+					} catch (IllegalArgumentException e) {
 						System.out.println("主题配置文件：app颜色参数有错，" + e.getMessage());
 						System.exit(1);
 					}

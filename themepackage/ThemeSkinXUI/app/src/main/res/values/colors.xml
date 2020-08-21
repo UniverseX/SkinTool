@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
-    <color name="text_time_color">#FFFFFF</color>
-    <color name="text_date_color">#FFFFFF</color>
-	<color name="navi_distance_text_color">#FFFFFF</color>
-    <color name="navi_next_road_text_color">#d6d6d6</color>
+    <color name="text_time_color">#ffffff</color>
+    <color name="text_date_color">#ffffff</color>
+	<color name="text_weather_color">#ffffff</color>
+	<color name="text_icon">#ffffff</color>
 </resources>

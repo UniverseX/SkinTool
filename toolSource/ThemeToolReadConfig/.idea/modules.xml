@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ThemeToolReadConfig.iml" filepath="$PROJECT_DIR$/ThemeToolReadConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThemeConfigTool.iml" filepath="$PROJECT_DIR$/ThemeConfigTool.iml" />
     </modules>
   </component>
 </project>
