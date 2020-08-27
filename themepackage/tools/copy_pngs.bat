@@ -75,6 +75,13 @@ for /r "%src_path%" %%p in (*.png) do (
 		set /a num_prevew+=1
 	)
 )
+for /r "%src_path%" %%p in (*.gif) do (
+	set preview_rev=!preview_revmap[%%~np]!
+	if "!preview_rev!" neq "" (
+		copy "%%p" "%assets_path%" >nul
+		set /a num_prevew+=1
+	)
+)
 echo 共拷贝预览图%num_prevew%个
 if %num_prevew% lss %all_preview_num% call pathFail.bat 预览图文件有错 "%PREVIEW_CONFIG_FILE%"
 

@@ -9,7 +9,7 @@ set assets_path=%5%
 @rem java env 
 SET JAVA_HOME=../jdk
 SET CLASSPATH=%JAVA_HOME%/lib/tools.jar;%JAVA_HOME%/lib/dt.jar
-@rem SET path=%path%;%JAVA_HOME%/jre/bin;%JAVA_HOME%/lib;%CLASSPATH%;
+SET path=%path%;%JAVA_HOME%/jre/bin;%JAVA_HOME%/lib;%CLASSPATH%;
 
 @rem param
 set ROOT=%DIRNAME%..
@@ -25,8 +25,8 @@ md %assets_path%
 
 if "%platform%" == "" call platformFail.bat CONFIG_PATH "%CONFIG_PATH%"
 
-set product_=""
 if "%product%" == "XUI" (
-	set product_=%product%_
+	java -jar XUI_skin_config_reader.jar %platform% "%CONFIG_PATH%" "%VALUE_PATH%"
+) else (
+    java -jar skin_config_reader.jar %product% %platform% "%CONFIG_PATH%" "%VALUE_PATH%"
 )
-java -jar %product_%skin_config_reader.jar %product% %platform% "%CONFIG_PATH%" "%VALUE_PATH%"

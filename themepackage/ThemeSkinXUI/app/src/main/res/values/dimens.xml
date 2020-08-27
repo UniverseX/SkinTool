@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
-    <dimen name="margin_text_icon">60dp</dimen>
-    <dimen name="weather_clock_x">245dp</dimen>
-    <dimen name="weather_clock_y">65dp</dimen>
+    <dimen name="margin_text_icon">45px</dimen>
+    <dimen name="weather_clock_x">48px</dimen>
+    <dimen name="weather_clock_y">64px</dimen>
 </resources>
