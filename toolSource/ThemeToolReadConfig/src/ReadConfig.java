@@ -258,7 +258,11 @@ public class ReadConfig {
 
 	public static String checkColor(String colorString) {
 		if (colorString.charAt(0) != '#' || (colorString.length() != 7 && colorString.length() != 9)) {
-			throw new IllegalArgumentException("Unknown color");
+			if (isEmpty(colorString) || colorString.equals("0.0") || colorString.equals("0")) {
+				colorString = "#ffffff";
+			} else {
+				throw new IllegalArgumentException("Unknown color");
+			}
 		}
 		return colorString;
 	}
