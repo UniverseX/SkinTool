@@ -41,8 +41,8 @@ public class ReadConfig {
 	 */
 	private static final int XUI_PROPERTIES_START_ROW_INDEX = 4;
 	private static final int XUI_PROPERTIES_END_ROW_INDEX = 26;
-	private static final int XUI_APP_JSON_START_ROW_INDEX = 28;
-	private static final int XUI_APP_JSON_END_ROW_INDEX = 46;
+	private static final String XUI_APP_JSON_START_ROW_INDEX = "config_app_list_start_row";
+	private static final String XUI_APP_JSON_END_ROW_INDEX = "config_app_list_end_row";
 
 	/**
 	 * 仿XUI app列表位置参数
@@ -54,7 +54,7 @@ public class ReadConfig {
 		/*//test.start
 		File file1 = new File(".");
 		System.out.println(file1.getAbsolutePath() + ", args = " + Arrays.toString(args));
-		String tempPlatform = "XUI";
+		String tempPlatform = "XUI_DUI";
 		String tempPath = "testfiles/skin_config_" + tempPlatform + ".xls";
 		String tempValuePath = "testfiles/values_" + tempPlatform;
 		args = new String[]{tempPlatform, tempPath, tempValuePath};
@@ -149,7 +149,13 @@ public class ReadConfig {
 						String value = infos.get(i + 1).get(j);
 						if (!value.startsWith("#")) {
 							//去掉.0后缀
-							String valueStr = String.valueOf(Float.valueOf(value).intValue());
+							String valueStr;
+							try {
+								valueStr = String.valueOf(Float.valueOf(value).intValue());
+							} catch (Exception e) {
+								System.out.println(key + "的值有问题");
+								throw new RuntimeException(e);
+							}
 							if(key.endsWith("_color")){//如果颜色为0，默认#ffffff
 								if (isEmpty(valueStr) || valueStr.endsWith("0")) {
 									valueStr = "#ffffff";
@@ -173,13 +179,18 @@ public class ReadConfig {
 			skin.setPages(pageList);
 
 			int tmpPage = -1;
-			for (int i = XUI_APP_JSON_START_ROW_INDEX; i < XUI_APP_JSON_END_ROW_INDEX; i++) {
+			int appStartRow = Integer.parseInt(properties.getProperty(XUI_APP_JSON_START_ROW_INDEX));
+			int appEndRow = Integer.parseInt(properties.getProperty(XUI_APP_JSON_END_ROW_INDEX));
+			for (int i = appStartRow; i < appEndRow; i++) {
 				List<String> rowInfos = infos.get(i);
 				String pageStr = rowInfos.get(0);
 				if (isEmpty(pageStr)) {
 					continue;
 				}
 				int pageNum = Float.valueOf(pageStr).intValue();
+				if (pageNum == 0) {
+					continue;
+				}
 				Skin.Page page;
 				if (tmpPage != pageNum) {
 					tmpPage = pageNum;
@@ -193,7 +204,7 @@ public class ReadConfig {
 					//create app
 					Skin.App app = new Skin.App();
 					//set attrs
-					app.setIndex(i - XUI_APP_JSON_START_ROW_INDEX);
+					app.setIndex(i - appStartRow);
 					app.setX(strToInt(rowInfos.get(1)));
 					app.setY(strToInt(rowInfos.get(2)));
 					app.setIcon_size(strToInt(rowInfos.get(3)));
@@ -212,7 +223,7 @@ public class ReadConfig {
 					List<Skin.App> appList = page.getApps();
 					Skin.App app = new Skin.App();
 					//set attrs
-					app.setIndex(i - XUI_APP_JSON_START_ROW_INDEX);
+					app.setIndex(i - appStartRow);
 					app.setX(strToInt(rowInfos.get(1)));
 					app.setY(strToInt(rowInfos.get(2)));
 					app.setIcon_size(strToInt(rowInfos.get(3)));
