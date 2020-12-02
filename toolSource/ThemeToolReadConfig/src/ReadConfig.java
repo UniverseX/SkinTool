@@ -39,8 +39,8 @@ public class ReadConfig {
 	/**
 	 * 仿XUI天气时钟组件 位置索引
 	 */
-	private static final int XUI_PROPERTIES_START_ROW_INDEX = 4;
-	private static final int XUI_PROPERTIES_END_ROW_INDEX = 26;
+	private static final String XUI_PROPERTIES_START_ROW_INDEX = "config_widget_start_row";
+	private static final String XUI_PROPERTIES_END_ROW_INDEX = "config_widget_end_row";
 	private static final String XUI_APP_JSON_START_ROW_INDEX = "config_app_list_start_row";
 	private static final String XUI_APP_JSON_END_ROW_INDEX = "config_app_list_end_row";
 
@@ -137,7 +137,9 @@ public class ReadConfig {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			for (int i = XUI_PROPERTIES_START_ROW_INDEX; i < XUI_PROPERTIES_END_ROW_INDEX; i++) {
+			int widgetStartRow = Integer.parseInt(properties.getProperty(XUI_PROPERTIES_START_ROW_INDEX));
+			int widgetEndRow = Integer.parseInt(properties.getProperty(XUI_PROPERTIES_END_ROW_INDEX));
+			for (int i = widgetStartRow; i < widgetEndRow; i++) {
 				List<String> rowInfos = infos.get(i);
 				int columns = rowInfos.size();
 				for (int j = 0; j < columns; j++) {
