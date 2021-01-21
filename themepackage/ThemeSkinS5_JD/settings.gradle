@@ -1,1 +1,1 @@
-include ':app', ':ThemeChecker'
+include ':app'
